@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 // services
 import { MapService } from './services/map/map.service';
 
@@ -13,6 +13,7 @@ import { MapRoutesComponent } from './components/map-routes/map-routes.component
     MapRoutesComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule
   ],
   providers: [
