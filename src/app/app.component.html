@@ -1,2 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-map-routes></app-map-routes>
+<div style="padding: 10px 0">
+  <input type="text" placeholder='Search places...' [(ngModel)]="query">
+  <button (click)="map.places(query)">Search</button></div>
+<app-map-routes #map appId="PM3vqGKWncDufkVT0Xb7" appCode="CNqqAVCdPpHH_Yhs7PcLdA" lat="19.4978" lng="-99.1269"
+  width="75%" height="530px"></app-map-routes>
